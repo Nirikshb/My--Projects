@@ -1,0 +1,72 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 2px;
+}
+
+#container {
+  width: 500px;
+  max-width: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+/* x axis, y axis, blur, how far do you want it spread   */
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px, 0;
+}
+/* first on top and bottom, then left and right */
+
+.controls {
+  margin: 3%;
+  display: grid;
+  gap: 10px;
+}
+
+.btnquestion1 {
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: rgb(19, 18, 18);
+  outline: none;
+}
+
+.btnquestion1:hover{
+  border-color: blueviolet;
+}
+
+.question{
+    
+    /* border: 1px solid red; */
+    /* width: 73vw; */
+    margin-top: 1%;
+    margin-bottom: 2%;
+    /* height: 25vh; */
+}
+
+.question video{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    height: 25vh;
+}
+
+.hide{
+    display: none;
+}
