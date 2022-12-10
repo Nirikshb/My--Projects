@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chaining</title>
+</head>
+<body>
+    <script>
+        /*
+        Promise chaining : Syntax that allows you to chain togegther multiple async tasks in a specific order
+
+        promise chaning is required if :
+        --Another promise is required from .then handler
+        --Any data is returned from .then handler
+        */
+    
+         const promise1= new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve()
+            },5000)
+         })
+
+         promise1
+         .then(()=>{
+            console.log("promise1 is resolved");
+         },()=>{
+            console.log("promise1 is rejected");
+         })
+         
+    </script>
+  
+
+
+
+
+</body>
+</html>

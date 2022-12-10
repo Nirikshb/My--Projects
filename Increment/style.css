@@ -36,9 +36,21 @@ button{
     border-radius: 5px;
 }
 
-.save{
+#saveEl{
     font-size: 2em;
     font-weight: 700;
     /* color: black; */
     background: darkred;  
+}
+
+#reset{
+    font-size: 2em;
+    font-weight: 700;
+    /* color: black; */
+    background: darkred;  
+}
+
+#save{
+    color: white;
+    font-size: 1.5em;
 }

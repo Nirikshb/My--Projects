@@ -17,78 +17,78 @@
 
 // Async and Await works together.
 
-// async
-async function weatherUpdate() {
-  let bombayWeather = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('The temp in Bombay is 33 deg celsius')
-    }, 0)
-  })
+// // async
+// async function weatherUpdate() {
+//   let bombayWeather = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('The temp in Bombay is 33 deg celsius')
+//     }, 0)
+//   })
 
-  let kolkataWeather = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('The temp in kolkata is 33 deg celsius')
-    }, 0)
-  })
-  // bombayWeather
-  // .then ((res) => {
-  //     console.log(res);
-  //        })
-  // .catch ((err) =>  {
-  //     console.log(err);
-  //        })
+//   let kolkataWeather = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('The temp in kolkata is 33 deg celsius')
+//     }, 0)
+//   })
+//   // bombayWeather
+//   // .then ((res) => {
+//   //     console.log(res);
+//   //        })
+//   // .catch ((err) =>  {
+//   //     console.log(err);
+//   //        })
 
-  // kolkataWeather
-  // .then((res) => {
-  //     console.log(res);
-  // })
-  // .catch((err) => {
-  //     console.log(err);
-  // })
+//   // kolkataWeather
+//   // .then((res) => {
+//   //     console.log(res);
+//   // })
+//   // .catch((err) => {
+//   //     console.log(err);
+//   // })
 
-  console.log('Getting weather details of Bombay')
-  let bombay = await bombayWeather
-  console.log('Got weather details of Bombay')
+//   console.log('Getting weather details of Bombay')
+//   let bombay = await bombayWeather
+//   console.log('Got weather details of Bombay')
 
-  console.log('Getting weather details of Bombay')
-  let kolkata = await kolkataWeather
-  console.log('Got weather details of Kolkata')
+//   console.log('Getting weather details of Bombay')
+//   let kolkata = await kolkataWeather
+//   console.log('Got weather details of Kolkata')
 
-  return [bombay, kolkata]
-}
+//   return [bombay, kolkata]
+// }
 
-const printSomething = () => {
-  console.log('Hey i am printing any cas things out here')
-}
-async function mainFunction() {
-  await weatherUpdate()
-  weatherUpdate()
-    .then((res) => {
-      console.log(res)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
-  await printSomething()
-}
+// const printSomething = () => {
+//   console.log('Hey i am printing any cas things out here')
+// }
+// async function mainFunction() {
+//   await weatherUpdate()
+//   weatherUpdate()
+//     .then((res) => {
+//       console.log(res)
+//     })
+//     .catch((err) => {
+//       console.log(err)
+//     })
+//   await printSomething()
+// }
 
-mainFunction()
+// mainFunction()
 
-const shopping = async () => {
-  try {
-    const task1 = await addItemsToCart('Jeans & Shirts')
-    console.log(task1)
+// const shopping = async () => {
+//   try {
+//     const task1 = await addItemsToCart('Jeans & Shirts')
+//     console.log(task1)
 
-    const task2 = await makePayment('1050/-')
-    console.log(task2)
+//     const task2 = await makePayment('1050/-')
+//     console.log(task2)
 
-    const task3 = await orderSummary('Ordered Jeans & Shirts')
-    console.log(task3)
-  } catch (err) {
-    console.log(err)
-  }
-}
-shopping()
+//     const task3 = await orderSummary('Ordered Jeans & Shirts')
+//     console.log(task3)
+//   } catch (err) {
+//     console.log(err)
+//   }
+// }
+// shopping()
 
 
 // Event loop & Task Qeueu
@@ -115,3 +115,5 @@ shopping()
 //these waiting tasks in the queue are then pushed in to the call stack by the
 //event loop where they can be executed
 //web api a store room
+
+

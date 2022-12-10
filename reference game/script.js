@@ -1,4 +1,3 @@
-
 const startButton = document.getElementById('start')
 const queestionContainerElement = document.getElementById
 ('question-container')
@@ -6,8 +5,6 @@ const queestionContainerElement = document.getElementById
 const questionElement = document.getElementById('question');
 const answerButtonElements = document.getElementById('answer-button');
 let shuffleQ, currentQuestionIndex
-
-
 
 startButton.addEventListener('click', startGame)
 
@@ -31,7 +28,7 @@ function correctAnswer(questionIndex){
     const options=document.getElementsByClassName("question1")
     console.log(options)
     for(let i=0;i<options.length;i++){
-        if(options[i].innerText==questions[questionIndex-1].correctAnswer){
+        if(options[i].innerText == questions[questionIndex-1].correctAnswer){
             options[i].style.color="green"
         }
     }
@@ -49,8 +46,6 @@ function correctAnswer(questionIndex){
 //         }
 //     });
 // }
-
-
 
 function selectAnswer(e) {
     const selectedButton = e.target
